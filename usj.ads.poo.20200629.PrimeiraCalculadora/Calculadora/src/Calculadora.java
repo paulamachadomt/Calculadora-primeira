@@ -12,10 +12,10 @@ public class Calculadora {
 		if (verificaOperador.contains("x")) {
 			resultado = true;
 		}
-		if (verificaOperador.contains("÷")) {
+		if (verificaOperador.contains("ï¿½")) {
 			resultado = true;
 		}
-		return resultado;
+		return resultado; 
 	}
 
 	public static String substringOperador(String verificaPonto) {
@@ -34,8 +34,8 @@ public class Calculadora {
 			indexOperador = verificaPonto.indexOf("x");
 			verificaPontoSubstring = String.valueOf(verificaPonto.charAt(indexOperador));
 		}
-		if (verificaPonto.contains("÷")) {
-			indexOperador = verificaPonto.indexOf("÷");
+		if (verificaPonto.contains("ï¿½")) {
+			indexOperador = verificaPonto.indexOf("ï¿½");
 			verificaPontoSubstring = String.valueOf(verificaPonto.charAt(indexOperador));
 		}
 
@@ -58,8 +58,8 @@ public class Calculadora {
 			indexOperador = verificaPonto.indexOf("x");
 			verificaPontoSubstring = verificaPonto.substring(0, indexOperador);
 		}
-		if (verificaPonto.contains("÷")) {
-			indexOperador = verificaPonto.indexOf("÷");
+		if (verificaPonto.contains("ï¿½")) {
+			indexOperador = verificaPonto.indexOf("ï¿½");
 			verificaPontoSubstring = verificaPonto.substring(0, indexOperador);
 		}
 
@@ -82,8 +82,8 @@ public class Calculadora {
 			indexOperador = verificaPonto.indexOf("x") + 1;
 			verificaPontoSubstring = verificaPonto.substring(indexOperador);
 		}
-		if (verificaPonto.contains("÷")) {
-			indexOperador = verificaPonto.indexOf("÷") + 1;
+		if (verificaPonto.contains("ï¿½")) {
+			indexOperador = verificaPonto.indexOf("ï¿½") + 1;
 			verificaPontoSubstring = verificaPonto.substring(indexOperador);
 		}
 
@@ -132,7 +132,7 @@ public class Calculadora {
 		case "x":
 			resultadoContinha = valor1 * valor2;
 			break;
-		case "÷":
+		case "ï¿½":
 			resultadoContinha = valor1 / valor2;
 			break;
 		default:
